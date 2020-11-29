@@ -17,11 +17,11 @@ public class Main {
 		ArrayList<Cliente> listaCliente = new ArrayList<>();
 		
 		//Rellenamos las Listas.
-		for(int i = 1; i<=120000;i++) {
+		for(int i = 1; i<=3;i++) {
 			Cocinero cocinero = new Cocinero(i,bandeja);
 			listaCocineros.add(cocinero);
 		}
-		for(int i = 1; i<=120000;i++) {
+		for(int i = 1; i<=3;i++) {
 			Cliente cliente = new Cliente(i,bandeja);
 			listaCliente.add(cliente);
 		}
