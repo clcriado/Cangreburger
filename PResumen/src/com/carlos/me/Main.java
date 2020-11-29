@@ -22,7 +22,7 @@ public class Main {
 	}
 	
 	/**
-	 * Este m�todo crea en consola la interfaz y la eleccion del m�todo a usar.
+	 * Este metodo crea en consola la interfaz y la eleccion del metodo a usar.
 	 */
 	
 	public static void menuSeleccion() {
@@ -72,7 +72,7 @@ public class Main {
 	}
 	
 	/**
-	 * Este m�todo crea un directorio especificandole una ruta y un nombre.
+	 * Este metodo crea un directorio especificandole una ruta y un nombre.
 	 */
 
 	private static void crearDirectorio() {
@@ -147,7 +147,7 @@ public class Main {
 	}
 	
 	/**
-	 * Este m�todo crea un fichero especificandole una ruta, un nombre y una extensi�n.
+	 * Este metodo crea un fichero especificandole una ruta, un nombre y una extension.
 	 */
 	
 	private static void crearFichero() {
@@ -215,7 +215,7 @@ public class Main {
 		
 	
 	/**
-	 * Este m�todo lista todas las Interfaces de red del equipo.
+	 * Este metodo lista todas las Interfaces de red del equipo.
 	 */
 	
 	private static void mostrarInterfaces() {
@@ -279,7 +279,7 @@ public class Main {
 		
 	
 	/**
-	 * Este m�todo permite introducir el nombre de una interfaz de red y si existe devolver� 
+	 * Este metodo permite introducir el nombre de una interfaz de red y si existe devolvera
 	 * su IPv4 si es que tiene una.
 	 */
 	
@@ -320,11 +320,11 @@ public class Main {
 						}
 					}
 				}
-				if(interfazExiste == false && !tieneIPv4) {
+				if(!interfazExiste && !tieneIPv4) {
 					System.out.println("Esta interfaz no existe.");
 				}
 				
-				if(interfazExiste == true && !tieneIPv4) {
+				if(interfazExiste && !tieneIPv4) {
 					System.out.println("Esta interfaz no tiene una IPv4.");
 				}
 				br.close();
@@ -373,11 +373,11 @@ public class Main {
 						}
 					}
 				}
-				if(interfazExiste == false && !tieneIPv4) {
+				if(!interfazExiste && !tieneIPv4) {
 					System.out.println("Esta interfaz no existe.");
 				}
 				
-				if(interfazExiste == true && !tieneIPv4) {
+				if(interfazExiste && !tieneIPv4) {
 					System.out.println("Esta interfaz no tiene una IPv4.");
 				}
 				br.close();
@@ -432,11 +432,11 @@ public class Main {
 						}
 					}
 				}
-				if(interfazExiste == false && !tieneMAC) {
+				if(!interfazExiste && !tieneMAC) {
 					System.out.println("Esta interfaz no existe.");
 				}
 				
-				if(interfazExiste == true && !tieneMAC) {
+				if(interfazExiste && !tieneMAC) {
 					System.out.println("Esta interfaz no tiene una MAC.");
 				}
 				br.close();
@@ -481,11 +481,11 @@ public class Main {
 						}
 					}
 				}
-				if(interfazExiste == false && !tieneMAC) {
+				if(!interfazExiste && !tieneMAC) {
 					System.out.println("Esta interfaz no existe.");
 				}
 				
-				if(interfazExiste == true && !tieneMAC) {
+				if(interfazExiste && !tieneMAC) {
 					System.out.println("Esta interfaz no tiene una MAC.");
 				}
 				br.close();
